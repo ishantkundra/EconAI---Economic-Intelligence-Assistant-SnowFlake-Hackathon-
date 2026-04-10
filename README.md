@@ -14,8 +14,8 @@
 
 | Name | Email | University |
 |---|---|---|
-| Ishant Kundra | ishantkundra9@gmail.com | Texas A&M University (MS CS, May 2025) |
-| Tanishq Chopra | tanishqtc1980@gmail.com | Texas A&M University |
+| Ishant Kundra | ishantkundra9@gmail.com || ishantkundra@tamu.edu | Texas A&M University (MCS, May 2025) |
+| Tanishq Chopra | tanishqtc1980@gmail.com || tanishq.chopra@tamu.edu| Texas A&M University (MCS, May 2026) |
 
 **GitHub:** https://github.com/tanishq-chopra1/EconAI---Economic-Intelligence-Assistant-SnowFlake-Hackathon-
 
@@ -42,14 +42,14 @@ questions in seconds - with inline citations on every claim.
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                     SNOWFLAKE MARKETPLACE                           │
-│  SEC Filings · Fed Reserve · World Bank · CFPB · FEMA · OECD · ... │
+│  SEC Filings · Fed Reserve · World Bank · CFPB · FEMA · OECD · ...  │
 └──────────────────────────────┬──────────────────────────────────────┘
                                │ 14 source tables
                                ▼
-┌─────────────────────────────────────────────────────────────────────┐
-│                     INGESTION (Snowpark Python)                     │
-│                                                                     │
-│   Part A - Text Tables          Part B - Numeric Narrativization    │
+┌────────────────────────────────────────────────────────────────────┐
+│                     INGESTION (Snowpark Python)                    │
+│                                                                    │
+│   Part A - Text Tables          Part B - Numeric Narrativization   │
 │   ┌─────────────────────┐       ┌─────────────────────────────┐    │
 │   │ Transcripts         │       │ Fed Reserve timeseries  →   │    │
 │   │ SEC 10-K / 10-Q     │       │ World Bank timeseries   →   │    │
@@ -60,12 +60,12 @@ questions in seconds - with inline citations on every claim.
 │   └─────────────────────┘       │   Natural Language          │    │
 │   400-word chunks               │      Sentences              │    │
 │   60-word overlap               └─────────────────────────────┘    │
-└──────────────────────────────┬──────────────────────────────────────┘
+└──────────────────────────────┬─────────────────────────────────────┘
                                │ 209,451 chunks
                                ▼
 ┌─────────────────────────────────────────────────────────────────────┐
 │              HACKATHON.DATA.CHUNKS (Snowflake Table)                │
-│         CHUNK_ID · CHUNK_TEXT · SOURCE · TITLE · METADATA          │
+│         CHUNK_ID · CHUNK_TEXT · SOURCE · TITLE · METADATA           │
 └──────────────────────────────┬──────────────────────────────────────┘
                                │
                                ▼
@@ -108,21 +108,21 @@ questions in seconds - with inline citations on every claim.
           │                                        │
           │  🟢 Confidence: 90%                    │
           │  📎 5 sources used                     │
-          └────────────────────────────────────────┘
+          └────────────────────────────────────── ─┘
                              │
                              ▼
 ┌─────────────────────────────────────────────────────────────────────┐
 │                  STREAMLIT IN SNOWFLAKE                             │
-│   4-tab UI · Source filter · Response length · Citation panel      │
+│   4-tab UI · Source filter · Response length · Citation panel       │
 └─────────────────────────────────────────────────────────────────────┘
                              │
           ┌──────────────────┼──────────────────┐
           ▼                  ▼                  ▼
 ┌──────────────┐   ┌──────────────────┐   ┌──────────────┐
 │    Model     │   │   Feature Store  │   │  Eval Table  │
-│  Registry   │   │ CHUNK_FEATURES   │   │ EVAL_RESULTS │
-│ ECONIQ_RAG  │   │      v1          │   │  20/20 ✅    │
-│     v1      │   └──────────────────┘   └──────────────┘
+│  Registry    │   │ CHUNK_FEATURES   │   │ EVAL_RESULTS │
+│ ECONIQ_RAG   │   │      v1          │   │  20/20 ✅    │
+│     v1       │   └──────────────────┘   └──────────────┘
 └──────────────┘
 ```
 
