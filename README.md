@@ -12,10 +12,10 @@
 **Track:** AI Track - Prompt 01 (RAG Knowledge Assistant)  
 **Team:**
 
-| Name | Email | University |
-|---|---|---|
-| Ishant Kundra | ishantkundra9@gmail.com || ishantkundra@tamu.edu | Texas A&M University (MCS, May 2025) |
-| Tanishq Chopra | tanishqtc1980@gmail.com || tanishq.chopra@tamu.edu| Texas A&M University (MCS, May 2026) |
+| Name | Email | University Email | University |
+|---|---|---|---|
+| Ishant Kundra | ishantkundra9@gmail.com | ishantkundra@tamu.edu | Texas A&M University (MCS, May 2025) |
+| Tanishq Chopra | tanishqtc1980@gmail.com | tanishq.chopra@tamu.edu| Texas A&M University (MCS, May 2026) |
 
 **GitHub:** https://github.com/tanishq-chopra1/EconAI---Economic-Intelligence-Assistant-SnowFlake-Hackathon-
 
