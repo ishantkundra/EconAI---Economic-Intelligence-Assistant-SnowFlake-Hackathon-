@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B)](https://streamlit.io)
 
-## 🏆 TAMU CSEGSA × Snowflake Hackathon 2026
+## 🏆 TAMU CSEGSA × Snowflake Hackathon 2026 Winner
 
 **Track:** AI Track - Prompt 01 (RAG Knowledge Assistant)  
 **Team:**
